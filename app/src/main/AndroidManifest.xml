@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ContentProvider">
+        <activity
+            android:name=".ContentAccessProvider"
+            android:exported="false" />
+
         <provider
-            android:name="dev.hmh.contentprovider.MyContentProvider"
+            android:name=".MyContentProvider"
             android:authorities="com.demo.user.provider"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
 
         <activity
             android:name=".MainActivity"
